@@ -1,6 +1,8 @@
 # hexo-blog
 我的博客
 
+使用 Hexo 构建的博客，用于分享我的编程经验和学习笔记。
+
 地址：
 
 https://wangwen135.github.io/
@@ -9,16 +11,25 @@ https://wangwen135.github.io/
 文章基本上都来自于本人的私人笔记，会不定期的发布文章。
 
 
+----
 
 
+<br>
 
+安装使用命令
+```
+npm install --registry=https://registry.npmmirror.com
+hexo server
+```
+<br>
 
 
 ----
 
 # Hexo安装使用
-https://hexo.io/zh-cn/
 
+官方地址：  
+https://hexo.io/zh-cn/  
 https://hexo.io/docs/
 
 Hexo 是一个快速、简洁且高效的博客框架。 Hexo 使用 Markdown（或其他标记语言）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
@@ -42,7 +53,8 @@ git 正常安装即可
 npm install -g hexo-cli
 
 ```
-> 好像需要科学上网
+> 有点慢，好像需要科学上网  
+> 可以指定国内镜像：--registry=https://registry.npmmirror.com
 
 
 ### 创建新的 Hexo 博客
@@ -60,6 +72,9 @@ hexo init blog
 ```
 cd blog
 npm install
+
+#或者指定淘宝镜像
+npm install --registry=https://registry.npmmirror.com
 ```
 
 ### 创建新的文章
@@ -67,7 +82,6 @@ npm install
 
 ```
 hexo new "我的第一篇文章"
-
 ```
 这会在 source/_posts 目录下生成一个新的 Markdown 文件，你可以在这个文件中编写你的文章。
 
