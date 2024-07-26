@@ -109,7 +109,9 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/wangwen135/wangwen135.github.io.git
+  branch: main
 
 
 #文章字数和阅读时间
