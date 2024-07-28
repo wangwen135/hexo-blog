@@ -1,13 +1,13 @@
 ---
-title: Hadoop-2-7-2-安装配置
-date: 2024-07-13 23:41
+title: Hadoop 2.7.2 安装配置
+date: 2016-09-13 22:11
 tags: 
   - Hadoop
+  - Hdfs
 categories:
   - [大数据, Hadoop]
 ---
 
-*王某某 2016年9月*
 
 官网地址：
 http://hadoop.apache.org/

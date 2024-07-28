@@ -1,8 +1,10 @@
 ---
-title: Spring-Data-Hbase
-date: 2022-10-27 23:41
+title: Spring Data Hbase
+date: 2016-09-23 22:32
 tags: 
   - HBase
+  - Spring
+  - Spring Data
 categories:
   - [大数据, HBase]
 ---

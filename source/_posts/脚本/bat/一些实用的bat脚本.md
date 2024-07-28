@@ -1,8 +1,9 @@
 ---
 title: 一些实用的bat脚本
-date: 2022-09-27 23:41
+date: 2018-09-27 9:31
 tags: 
   - bat
+  - Windows
 categories:
   - [脚本, bat]
 ---

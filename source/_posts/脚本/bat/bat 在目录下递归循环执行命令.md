@@ -1,8 +1,9 @@
 ---
-title: bat-在目录下递归循环执行命令
-date: 2024-02-15 23:41
+title: bat 在目录下递归循环执行命令
+date: 2018-02-15 12:01
 tags: 
   - bat
+  - Windows
 categories:
   - [脚本, bat]
 ---

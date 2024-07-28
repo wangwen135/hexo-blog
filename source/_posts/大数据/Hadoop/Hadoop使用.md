@@ -1,15 +1,12 @@
 ---
 title: Hadoop使用
-date: 2022-07-06 23:41
+date: 2016-09-20 23:21
 tags: 
   - Hadoop
+  - Hdfs
 categories:
   - [大数据, Hadoop]
 ---
-
-*王某某 2016年9月*
-
-----
 
 
 ## 官方文档

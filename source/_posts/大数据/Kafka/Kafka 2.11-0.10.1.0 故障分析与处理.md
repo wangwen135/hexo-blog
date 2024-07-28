@@ -1,10 +1,11 @@
 ---
-title: kafka_2-11-0-10-1-0故障分析与处理
-date: 2019-08-09 23:41
+title: Kafka 2.11-0.10.1.0 故障分析与处理
+date: 2020-04-24 10:43:36
 tags: 
-  - kafka
+  - Kafka
+  - 死锁
 categories:
-  - [大数据, kafka]
+  - [大数据, Kafka]
 ---
 
 

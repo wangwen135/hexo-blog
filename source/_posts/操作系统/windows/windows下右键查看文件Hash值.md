@@ -1,13 +1,13 @@
 ---
 title: windows下右键查看文件Hash值
-date: 2020-08-31 23:41
+date: 2020-08-31 22:01
 tags: 
-  - windows
+  - Windows
+  - Bat
+  - Hash
 categories:
-  - [操作系统, windows]
+  - [操作系统, Windows]
 ---
-
-*荣艺给的脚本*
 
 ### CMD命令
 **certutil -hashfile filename [MD5|SHA1|SHA256]**

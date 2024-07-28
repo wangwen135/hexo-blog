@@ -1,8 +1,10 @@
 ---
 title: Linux内核版本升级或降级
-date: 2024-02-20 23:41
+date: 2021-08-12 23:26
 tags: 
   - Linux
+  - 内核
+  - PVE
 categories:
   - [操作系统, Linux]
 ---

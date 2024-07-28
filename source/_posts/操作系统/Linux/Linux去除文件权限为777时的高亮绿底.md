@@ -1,8 +1,9 @@
 ---
 title: Linux去除文件权限为777时的高亮绿底
-date: 2022-03-11 23:41
+date: 2024-03-11 22:21
 tags: 
   - Linux
+  - Shell
 categories:
   - [操作系统, Linux]
 ---

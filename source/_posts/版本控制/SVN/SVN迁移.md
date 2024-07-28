@@ -1,13 +1,12 @@
 ---
 title: SVN迁移
-date: 2018-06-13 11:13
+date: 2016-08-13 11:13
 tags: 
   - SVN
 categories:
   - [版本控制, SVN]
 ---
 
-*wwh 2016年8月*
 
 从window平台迁移到linux平台
 

@@ -7,9 +7,6 @@ categories:
   - [版本控制, git]
 ---
 
-凑个数  
-
-----
 
 
 当前在xxx分支上，然后执行rebase命令 master分支

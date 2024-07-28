@@ -1,13 +1,12 @@
 ---
 title: SVN安装配置
-date: 2018-06-13 14:28
+date: 2016-06-13 14:28
 tags: 
   - SVN
+  - subversion
 categories:
   - [版本控制, SVN]
 ---
-
-*wwh 2016年6月*
 
 ### 查看：
 ```

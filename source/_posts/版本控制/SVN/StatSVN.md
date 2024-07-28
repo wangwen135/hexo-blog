@@ -1,8 +1,9 @@
 ---
 title: StatSVN
-date: 2017-02-05 15:35
+date: 2017-05-05 15:35
 tags: 
   - SVN
+  - StatSVN
 categories:
   - [版本控制, SVN]
 ---
@@ -59,7 +60,7 @@ java -jar statsvn.jar [options] <logfile> <checked-out-module>
 #!/bin/sh
 
 #
-# 用于统计深网暗网项目的代码情况
+# 用于统计深暗项目的代码情况
 #
 
 #进入SVN检出目录

@@ -1,15 +1,13 @@
 ---
 title: Hadoop默认配置
-date: 2024-03-14 23:41
+date: 2016-09-14 13:21
 tags: 
   - Hadoop
+  - Hdfs
 categories:
   - [大数据, Hadoop]
 ---
 
-*王某某 2016年9月*
-
-----
 
 配置hadoop，主要是配置core-site.xml，hdfs-site.xml，mapred-site.xml，yarn-site.xml三个配置文件，默认下来，这些配置文件都是空的，所以很难知道这些配置文件有哪些配置可以生效，需要去Apache的官网中找对应版本的默认配置文件。YARN是新一代的MapReduce，又叫：MapReduce 2.0 (MRv2)。
 

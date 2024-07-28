@@ -1,8 +1,10 @@
 ---
-title: TOP
-date: 2021-02-02 23:41
+title: TOP 命令
+date: 2021-02-02 13:22
 tags: 
   - Linux
+  - Shell
+  - Top
 categories:
   - [操作系统, Linux]
 ---

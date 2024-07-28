@@ -1,8 +1,9 @@
 ---
-title: windows-杀占用端口的进程
-date: 2020-08-27 23:41
+title: windows 杀占用端口的进程
+date: 2019-08-27 9:52
 tags: 
   - bat
+  - Windows
 categories:
   - [脚本, bat]
 ---

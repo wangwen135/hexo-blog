@@ -1,8 +1,10 @@
 ---
-title: HBase-1-2-4-安装配置
-date: 2023-04-08 23:41
+title: HBase 1.2.4 安装配置
+date: 2016-09-22 23:21
 tags: 
   - HBase
+  - Hadoop
+  - Zookeeper
 categories:
   - [大数据, HBase]
 ---

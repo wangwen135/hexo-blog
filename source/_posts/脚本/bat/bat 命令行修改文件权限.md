@@ -1,8 +1,9 @@
 ---
-title: bat-命令行修改文件权限
-date: 2022-03-14 23:41
+title: bat 命令行修改文件权限
+date: 2019-03-14 23:41
 tags: 
   - bat
+  - Windows
 categories:
   - [脚本, bat]
 ---

@@ -1,6 +1,6 @@
 ---
-title: HBase-Shell
-date: 2023-03-04 23:41
+title: HBase Shell
+date: 2016-09-22 14:49
 tags: 
   - HBase
 categories:
