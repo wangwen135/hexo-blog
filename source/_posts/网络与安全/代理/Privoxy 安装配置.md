@@ -1,8 +1,9 @@
 ---
-title: Privoxy-安装配置
-date: 2022-10-15 23:41
+title: Privoxy 安装配置
+date: 2017-12-15
 tags: 
   - 代理
+  - Proxy
 categories:
   - [网络与安全, 代理]
 ---

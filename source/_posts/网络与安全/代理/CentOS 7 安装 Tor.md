@@ -1,6 +1,6 @@
 ---
-title: CentOS-7-安装-Tor
-date: 2022-10-16 23:41
+title: CentOS 7 安装 Tor
+date: 2017-11-23
 tags: 
   - 代理
 categories:

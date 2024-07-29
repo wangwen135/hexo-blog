@@ -1,13 +1,14 @@
 ---
 title: Ubuntu-安装-最新-TOR
-date: 2020-05-13 23:41
+date: 2017-11-23
 tags: 
   - 代理
+  - TOR
 categories:
   - [网络与安全, 代理]
 ---
 
-*王某某 2017年11月*
+
 
 https://www.torproject.org/download/download-unix.html.en
 
