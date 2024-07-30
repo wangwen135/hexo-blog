@@ -1,8 +1,9 @@
 ---
 title: 配置IPTV用wifi
-date: 2019-08-11 23:41
+date: 2020-08-11 23:41
 tags: 
-  - 路由器&光猫
+  - 光猫
+  - IPTV
 categories:
   - [硬件与物联网, 路由器&光猫]
 ---
@@ -17,23 +18,30 @@ categories:
 
 
 ### 用超级账号登陆光猫
+> 如何获取超级账号密码需要另外想办法
+> 有限地方的超级账号密码都是同一个，网上能查得到
 
 ### 去掉宽带的无线绑定
-**网络 ->  宽带设置**
-连接名称 选择 2_INTERNET_R_VID_
+**网络 ->  宽带设置**  
+
+连接名称 选择 2_INTERNET_R_VID_  
 将下面  绑定端口： 无线(2.4G-x) 的勾 去掉，点击应用
-![修改端口绑定](https://upload-images.jianshu.io/upload_images/2043910-8eb87a8c8bec7967.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![修改端口绑定.png](https://img.wangwen135.top:23456/image/2024/07/66a90fb54a422.png)
 
 ### 设置iptv的无线绑定
 **网络 ->  宽带设置**
-选择 3_Other_B_VID_45
+
+选择 3_Other_B_VID_45  
 这个就是IPTV，将无线勾上，点击应用
-![IPTV无线绑定](https://upload-images.jianshu.io/upload_images/2043910-138ed15fa441365f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![IPTV无线绑定.png](https://img.wangwen135.top:23456/image/2024/07/66a90feca15b6.png)
 
 ### 修改WLAN配置启动无线
-**网络 -> WLAN配置 **
+**网络 -> WLAN配置 **  
+
 SSID 使能的勾勾上
-![SSID使能](https://upload-images.jianshu.io/upload_images/2043910-1c08b9799567706f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![SSID使能.png](https://img.wangwen135.top:23456/image/2024/07/66a910153323a.png)
 
 ============================
 

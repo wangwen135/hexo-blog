@@ -1,8 +1,8 @@
 ---
-title: 光猫telnet-并获取权限
-date: 2024-04-25 23:41
+title: 光猫telnet 并获取权限
+date: 2021-06-17
 tags: 
-  - 路由器&光猫
+  - 光猫
 categories:
   - [硬件与物联网, 路由器&光猫]
 ---

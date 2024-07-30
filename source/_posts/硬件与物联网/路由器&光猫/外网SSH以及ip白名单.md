@@ -2,7 +2,8 @@
 title: 外网SSH以及ip白名单
 date: 2022-07-06 23:41
 tags: 
-  - 路由器&光猫
+  - 路由器
+  - firewall
 categories:
   - [硬件与物联网, 路由器&光猫]
 ---
@@ -70,9 +71,6 @@ service firewall restart
 
 
 
-----
-----
-----
 ----
 ----
 

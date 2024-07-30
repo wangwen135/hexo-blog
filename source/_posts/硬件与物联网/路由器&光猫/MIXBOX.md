@@ -1,8 +1,9 @@
 ---
 title: MIXBOX
-date: 2022-06-05 23:41
+date: 2021-06-05
 tags: 
-  - 路由器&光猫
+  - 路由器
+  - MIXBOX
 categories:
   - [硬件与物联网, 路由器&光猫]
 ---

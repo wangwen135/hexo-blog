@@ -1,8 +1,9 @@
 ---
 title: 群晖使用iperf3测试网速
-date: 2024-02-27 23:41
+date: 2021-09-24
 tags: 
   - 黑群晖
+  - iperf3
 categories:
   - [硬件与物联网, 黑群晖]
 ---

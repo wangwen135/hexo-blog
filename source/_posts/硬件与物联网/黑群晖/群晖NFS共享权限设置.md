@@ -1,8 +1,10 @@
 ---
-title: 群晖NFS-共享权限设置
-date: 2020-03-02 23:41
+title: 群晖NFS共享权限设置
+date: 2021-09-22
 tags: 
   - 黑群晖
+  - NFS
+  - mount
 categories:
   - [硬件与物联网, 黑群晖]
 ---

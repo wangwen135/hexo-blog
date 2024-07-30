@@ -1,8 +1,9 @@
 ---
 title: 群晖WebDAV方式外网映射磁盘
-date: 2021-07-12 23:41
+date: 2021-09-27
 tags: 
   - 黑群晖
+  - WebDAV
 categories:
   - [硬件与物联网, 黑群晖]
 ---

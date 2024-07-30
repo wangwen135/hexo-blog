@@ -1,6 +1,6 @@
 ---
-title: 群晖安装-Transmission
-date: 2021-05-17 23:41
+title: 群晖安装 Transmission
+date: 2021-09-21
 tags: 
   - 黑群晖
 categories:

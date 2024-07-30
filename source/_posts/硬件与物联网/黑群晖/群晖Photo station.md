@@ -1,6 +1,6 @@
 ---
-title: 群晖Photo-station
-date: 2022-05-22 23:41
+title: 群晖Photo station
+date: 2021-09-25
 tags: 
   - 黑群晖
 categories:
