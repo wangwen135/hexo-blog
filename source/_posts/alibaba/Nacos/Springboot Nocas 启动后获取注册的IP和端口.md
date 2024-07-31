@@ -1,10 +1,11 @@
 ---
-title: springboot-nocas-启动后获取注册的IP和端口
-date: 2020-01-04 23:41
+title: Springboot Nocas 启动后获取注册的IP和端口
+date: 2021-11-18 17:10
 tags: 
-  - alibaba
+  - Springboot
+  - Nacos
 categories:
-  - [alibaba]
+  - [alibaba,Nacos]
 ---
 
 ```

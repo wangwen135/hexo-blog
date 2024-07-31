@@ -1,6 +1,6 @@
 ---
 title: TCS3002D-Color-Sensor-测试
-date: 2020-05-09 23:41
+date: 2015-12-09
 tags: 
   - Arduino
 categories:
@@ -9,7 +9,8 @@ categories:
 
 Arduino Color Sensor TCS3002D 
 
-2015年12月
+颜色传感器 
+
 
 ```
 #define led 7 //led

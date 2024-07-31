@@ -1,6 +1,6 @@
 ---
-title: 树莓派-设置HDMI分辨率
-date: 2023-03-23 23:41
+title: 树莓派设置HDMI分辨率
+date: 2017-03-05
 tags: 
   - 树莓派
 categories:

@@ -1,6 +1,6 @@
 ---
-title: 树莓派-WIFI-热点
-date: 2022-12-02 23:41
+title: 树莓派WIFI热点
+date: 2017-02-12
 tags: 
   - 树莓派
 categories:

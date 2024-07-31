@@ -1,10 +1,10 @@
 ---
 title: 常见CSV格式
-date: 2021-12-02 23:41
+date: 2017-01-07 14:11
 tags: 
   - CSV
 categories:
-  - [CSV]
+  - [数据交换格式, CSV]
 ---
 
 # 常见CSV格式

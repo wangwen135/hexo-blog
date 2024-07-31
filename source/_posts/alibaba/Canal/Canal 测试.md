@@ -1,10 +1,11 @@
 ---
-title: Canal-测试
+title: Canal 测试
 date: 2021-06-19 23:41
-tags: 
-  - alibaba
+tags:   
+  - Canal
+  - Mysql
 categories:
-  - [alibaba]
+  - [alibaba,Canal]
 ---
 
 
