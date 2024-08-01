@@ -1,8 +1,9 @@
 ---
-title: ElasticSearch-5-2-X-安装ElasticSearch-head
-date: 2022-10-13 23:41
+title: ElasticSearch 5.2.X安装ElasticSearch-head
+date: 2018-02-07 11:19
 tags: 
   - Elasticsearch
+  - ElasticSearch-head
 categories:
   - [Elasticsearch]
 ---

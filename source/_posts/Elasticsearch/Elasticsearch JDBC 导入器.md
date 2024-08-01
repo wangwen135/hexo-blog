@@ -1,6 +1,6 @@
 ---
-title: Elasticsearch-JDBC-导入器
-date: 2019-08-08 23:41
+title: Elasticsearch JDBC 导入器
+date: 2017-04-25 10:52
 tags: 
   - Elasticsearch
 categories:
@@ -25,11 +25,11 @@ https://github.com/jprante/elasticsearch-jdbc
 
 1. 下载
 ```
-    wget http://xbib.org/repository/org/xbib/elasticsearch/importer/elasticsearch-jdbc/2.3.4.0/elasticsearch-jdbc-2.3.4.0-dist.zip
+wget http://xbib.org/repository/org/xbib/elasticsearch/importer/elasticsearch-jdbc/2.3.4.0/elasticsearch-jdbc-2.3.4.0-dist.zip
 ```
 2. 解压缩  
 ```
-    unzip elasticsearch-jdbc-2.3.4.0-dist.zip 
+unzip elasticsearch-jdbc-2.3.4.0-dist.zip 
 ```
 3. 确定JDBC驱动jar  
     检查lib目录是否有你需要的jdbc驱动jar，如果没有需要将相关jar放到该目录中。

@@ -1,6 +1,6 @@
 ---
-title: elasticsearch-节点重启问题
-date: 2023-10-15 23:41
+title: elasticsearch 节点重启问题
+date: 2018-09-26 15:29
 tags: 
   - Elasticsearch
 categories:
