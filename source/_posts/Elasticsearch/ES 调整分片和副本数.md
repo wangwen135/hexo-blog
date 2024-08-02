@@ -1,6 +1,6 @@
 ---
-title: ES-调整分片和副本数
-date: 2022-07-08 23:41
+title: ES 调整分片和副本数
+date: 2018-03-30 16:09
 tags: 
   - Elasticsearch
 categories:

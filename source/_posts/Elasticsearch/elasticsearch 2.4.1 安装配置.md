@@ -1,4 +1,3 @@
-
 ---
 title: elasticsearch 2.4.1 安装配置
 date: 2017-03-05

@@ -1,6 +1,6 @@
 ---
-title: Multi-fields--Reindex
-date: 2024-01-08 23:41
+title: Multi-fields Reindex
+date: 2017-04-25 10:35
 tags: 
   - Elasticsearch
 categories:

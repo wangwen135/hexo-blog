@@ -1,6 +1,6 @@
 ---
-title: ES-全文搜索
-date: 2024-07-07 23:41
+title: ES 全文搜索
+date: 2017-06-29 11:36
 tags: 
   - Elasticsearch
 categories:
@@ -9,7 +9,8 @@ categories:
 
 # ES 全文搜索
 
-1. 全文搜索
+### 1. 全文搜索
+
 ```
 GET /my_index/my_type/_search
 {
@@ -35,7 +36,8 @@ GET /my_index/my_type/_search
 }
 ```
 
-2. 提高查询精度  
+### 2. 提高查询精度  
+
 match查询接受一个operator参数，该参数的默认值是"or"。你可以将它改变为"and"来要求所有的词条都需要被匹配：
 ```
 GET /my_index/my_type/_search
@@ -70,7 +72,8 @@ GET /my_index/my_type/_search
 }
 ```
 
-3. 控制查询精度  
+### 3. 控制查询精度  
+
 match查询支持minimum_should_match参数，它能够让你指定有多少词条必须被匹配才会让该文档被当做一个相关的文档。尽管你能够指定一个词条的绝对数量，但是通常指定一个百分比会更有意义，因为你无法控制用户会输入多少个词条：
 ```
 GET /my_index/my_type/_search
@@ -107,7 +110,8 @@ GET /my_index/my_type/_search
 }
 ```
 
-4. 合并查询  
+### 4. 合并查询  
+
 bool查询通过must，must_not以及should参数来接受多个查询。比如：
 ```
 GET /my_index/my_type/_search
@@ -125,7 +129,8 @@ GET /my_index/my_type/_search
 }
 ```
 
-5. 控制精度  
+### 5. 控制精度  
+
 正如可以控制match查询的精度，也能够通过minimum_should_match参数来控制should语句需要匹配的数量，该参数可以是一个绝对数值或者一个百分比：
 ```
 GET /my_index/my_type/_search
@@ -143,7 +148,8 @@ GET /my_index/my_type/_search
 }
 ```
 
-6. 提升查询子句(Boosting Query Clause)  
+### 6. 提升查询子句(Boosting Query Clause)  
+
 假设我们需要搜索和"full-text search"相关的文档，但是我们想要给予那些提到了"Elasticsearch"或者"Lucene"的文档更多权重。更多权重的意思是，对于提到了"Elasticsearch"或者"Lucene"的文档，它们的相关度_score会更高，即它们会出现在结果列表的前面。  
 一个简单的bool查询能够让我们表达较为复杂的逻辑：
 ```
@@ -168,7 +174,8 @@ GET /_search
 }
 ```
 
-7. 多个查询字符串(Multiple Query Strings)  
+### 7. 多个查询字符串(Multiple Query Strings)  
+
 ```
 GET /_search
 {
@@ -202,7 +209,8 @@ GET /_search
 }
 ```
 
-8. 设置子句优先级  
+### 8. 设置子句优先级  
+
 通过boost参数，增加字段的权重
 ```
 GET /_search
@@ -232,7 +240,8 @@ GET /_search
 }
 ```
 
-9. 多字段查询
+### 9. 多字段查询
+
 ```
 {
     "multi_match": {

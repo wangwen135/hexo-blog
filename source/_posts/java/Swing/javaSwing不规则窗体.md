@@ -1,15 +1,16 @@
 ---
 title: java不规则窗体
-date: 2020-02-07 23:41
+date: 2018-09-18 20:11
 tags: 
-  - java-swing
+  - Java
+  - Swing
 categories:
-  - [java-swing]
+  - [Java,Swing]
 ---
 
 用背景透明的png图片
 
-![不规则窗体](https://upload-images.jianshu.io/upload_images/2043910-0284c9db586fc2de.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![1722585581717.png](https://img.wangwen135.top:23456/note/2024/08/66ac91f302fa6.png)
 
 
 ### 不规则窗体

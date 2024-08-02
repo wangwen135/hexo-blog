@@ -1,13 +1,14 @@
 ---
 title: java画监控面板
-date: 2019-08-02 23:41
+date: 2017-08-02 23:41
 tags: 
-  - java-swing
+  - Java
+  - Swing
 categories:
-  - [java-swing]
+  - [Java,Swing]
 ---
 
-![监控界面.png](https://upload-images.jianshu.io/upload_images/2043910-8ba19df71a9d6802.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![1722585790528.png](https://img.wangwen135.top:23456/note/2024/08/66ac92c406c4c.png)
 
 ### 画面板 MonitorPanel
 ```

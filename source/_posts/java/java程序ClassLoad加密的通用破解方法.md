@@ -1,10 +1,14 @@
 ---
 title: java程序ClassLoad加密的通用破解方法
-date: 2022-05-28 23:41
+date: 2019-05-15 12:01
 tags: 
-  - java
+  - Java
+  - Class
+  - 加密
+  - 字节码
+  - JavaAgent
 categories:
-  - [java]
+  - [Java]
 ---
 
 
@@ -200,4 +204,5 @@ E:\opt\logs\wwh\classFile>tree
         └─spi
 ......        
 ......
+
 ```
