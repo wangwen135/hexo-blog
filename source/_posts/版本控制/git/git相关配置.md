@@ -1,12 +1,11 @@
 ---
 title: git相关配置
-date: 2017-16-26 23:41
+date: 2017-16-26
 tags: 
   - git
 categories:
   - [版本控制, git]
 ---
-
 
 
 ### .gitconfig 文件
