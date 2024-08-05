@@ -1,13 +1,12 @@
 ---
 title: Maven属性（properties）
-date: 2021-05-20 23:41
+date: 2017-02-20 23:41
 tags: 
   - Maven
 categories:
   - [Maven]
 ---
 
-*王某某 2017年2月*
 
 通过<properties>元素用户可以自定义一个或多个Maven属性，然后在POM的其他地方使用${属性名}的方式引用该属性，这种做法的最大意义在于消除重复和统一管理。
 

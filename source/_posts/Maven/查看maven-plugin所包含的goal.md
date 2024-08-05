@@ -1,6 +1,6 @@
 ---
 title: 查看maven-plugin所包含的goal
-date: 2021-05-06 23:41
+date: 2018-08-18 17:51
 tags: 
   - Maven
 categories:

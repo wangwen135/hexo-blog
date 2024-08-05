@@ -1,6 +1,6 @@
 ---
 title: maven打包可运行的jar
-date: 2024-04-09 23:41
+date: 2020-04-09 23:41
 tags: 
   - Maven
 categories:
