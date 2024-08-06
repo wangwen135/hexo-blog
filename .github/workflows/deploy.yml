@@ -50,6 +50,9 @@ jobs:
           echo "${{ secrets.ACTIONS_DEPLOY_KEY }}" > ~/.ssh/id_ed25519
           echo "设置私钥文件权限"
           chmod 600 ~/.ssh/id_ed25519
+
+          cat ~/.ssh/id_ed25519
+
           echo "添加 GitHub 的 SSH 主机密钥到 known_hosts 文件中"
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           
@@ -60,14 +63,18 @@ jobs:
           echo "克隆 wangwen135.github.io 仓库的 main 分支到 .deploy_repo 目录"
           git clone --branch main git@github.com:wangwen135/wangwen135.github.io.git .deploy_repo
 
-          echo "使用 rsync 将 public 目录中的内容同步到 .deploy_repo 目录"
-          rsync -av --delete public/ .deploy_repo/
-
           echo "切换到 .deploy_repo 目录"
           cd .deploy_repo
+
+          echo "更新一下代码"
+          git pull
+
+          echo "使用 rsync 将 public 目录中的内容同步到 .deploy_repo 目录"
+          rsync -av --delete ../public/ .
+
           echo "添加所有更改"
           git add .
-          echo '提交更改，提交信息为 "Deploy updates from {仓库名称}"'
-          git commit -m "Deploy updates from ${GITHUB_REPOSITORY}"
+          echo '提交更改，提交信息为 "Deploy updates"'
+          git commit -m "Deploy updates"
           echo "推送更改到远程仓库的 main 分支"
           git push
