@@ -1,0 +1,68 @@
+name: Deploy to GitHub Pages
+
+# 触发条件：当推送到 main 分支时
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 检出 hexo-blog 仓库的代码
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 缓存 NPM 依赖
+      - name: Cache NPM dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # 安装依赖
+      - name: Install dependencies
+        run: npm install
+
+      # 构建 Hexo 网站
+      - name: Build Hexo site
+        run: npm run build
+
+      # 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        run: |
+          # 创建 .ssh 目录
+          mkdir -p ~/.ssh
+          # 写入部署密钥到 id_ed25519 文件中
+          echo "${{ secrets.ACTIONS_DEPLOY_KEY }}" > ~/.ssh/id_ed25519
+          # 设置私钥文件权限
+          chmod 600 ~/.ssh/id_ed25519
+          # 添加 GitHub 的 SSH 主机密钥到 known_hosts 文件中
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          # 配置 Git 用户信息
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          # 克隆 wangwen135.github.io 仓库的 main 分支到 .deploy_repo 目录
+          git clone --branch main git@github.com:wangwen135/wangwen135.github.io.git .deploy_repo
+          # 使用 rsync 将 public 目录中的内容同步到 .deploy_repo 目录
+          rsync -av --delete public/ .deploy_repo/
+          # 切换到 .deploy_repo 目录
+          cd .deploy_repo
+          # 添加所有更改
+          git add .
+          # 提交更改，提交信息为 "Deploy updates from {仓库名称}"
+          git commit -m "Deploy updates from ${GITHUB_REPOSITORY}"
+          # 推送更改到远程仓库的 main 分支
+          git push
