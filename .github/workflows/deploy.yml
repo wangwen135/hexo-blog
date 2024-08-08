@@ -70,7 +70,7 @@ jobs:
           git pull
 
           echo "使用 rsync 将 public 目录中的内容同步到 .deploy_repo 目录"
-          rsync -av --delete ../public/ .
+          rsync -av --delete --exclude '.git' ../public/ .
 
           echo "添加所有更改"
           git add .
