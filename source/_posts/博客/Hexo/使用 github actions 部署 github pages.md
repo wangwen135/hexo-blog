@@ -1,6 +1,6 @@
 ---
 title: 使用 github actions 部署 github pages
-date: 2024-8-5
+date: 2024-8-8
 tags: 
   - Github
   - Actions
