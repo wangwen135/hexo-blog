@@ -1,14 +1,10 @@
 ---
-title: Mysql-关键字-保留字
-date: 2022-03-20 23:41
+title: Mysql 关键字 保留字
+date: 2017-07-25 23:41
 tags: 
   - MySQL
 categories:
   - [MySQL]
----
-
-*2017年7月*
-
 ---
 
 

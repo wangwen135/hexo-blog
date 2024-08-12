@@ -1,7 +1,8 @@
 ---
-title: I-O多路复用（I-O-Multiplexing）
-date: 2021-08-16 23:41
+title: IO多路复用（IO Multiplexing）
+date: 2020-08-16 23:41
 tags: 
+  - I/O
   - Netty
 categories:
   - [Netty]

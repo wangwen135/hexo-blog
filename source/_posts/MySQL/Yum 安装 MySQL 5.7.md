@@ -1,15 +1,12 @@
 ---
-title: Yum-安装-MySQL-5-7
-date: 2020-12-15 23:41
+title: Yum 安装 MySQL 5.7
+date: 2017-10-15 23:41
 tags: 
   - MySQL
 categories:
   - [MySQL]
 ---
 
-*2017年10月*
-
----
 
 https://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/
 

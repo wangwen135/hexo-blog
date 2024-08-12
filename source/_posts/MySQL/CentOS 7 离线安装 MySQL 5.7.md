@@ -1,15 +1,14 @@
 ---
-title: CentOS-7-离线安装-MySQL-5-7
-date: 2021-10-04 23:41
+title: CentOS 7 离线安装 MySQL 5.7
+date: 2017-09-07
 tags: 
   - MySQL
+  - CentOS 7
 categories:
   - [MySQL]
 ---
 
-*2017年8月*
 
----
 
 1. 确定系统版本
 ```

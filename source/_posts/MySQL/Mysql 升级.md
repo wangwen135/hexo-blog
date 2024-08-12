@@ -1,15 +1,12 @@
 ---
-title: Mysql-升级
-date: 2020-06-25 23:41
+title: Mysql 升级
+date: 2017-08-25 23:41
 tags: 
   - MySQL
 categories:
   - [MySQL]
 ---
 
-*2017年8月*
-
----
 # 升级之前请备份数据
 ---
 

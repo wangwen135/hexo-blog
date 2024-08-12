@@ -1,6 +1,6 @@
 ---
-title: Netty-笔记
-date: 2023-04-22 23:41
+title: Netty 笔记
+date: 2020-06-23 23:41
 tags: 
   - Netty
 categories:
@@ -27,6 +27,9 @@ Reactor（反应堆模型）
 Reactor模式也叫Dispatcher模式，即I/O多路复用统一监听事件，收到事件后分发(Dispatch给某进程)
 
 > Reactor就是一个执行while (true) { selector.select(); ...}循环的线程，会源源不断的产生新的事件
+
+![1718249102415.png](https://img.wangwen135.top:23456/note/2024/06/666a669125aff.png)
+
 
 Reactor模型中有2个关键组成：
 - Reactor Reactor在一个单独的线程中运行，负责监听和分发事件，分发给适当的处理程序来对IO事件做出反应。

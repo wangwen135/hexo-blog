@@ -1,11 +1,14 @@
 ---
-title: Netty-4-0-30-连接池bug分析记录
-date: 2021-09-22 23:41
+title: Netty 4.0.30 连接池bug分析记录
+date: 2019-06-14 23:41
 tags: 
   - Netty
+  - FastDFS
 categories:
   - [Netty]
 ---
+
+Fastdfs 问题分析记录
 
 ## 问题
 生产上存在上传文件到fastdfs中时一直卡死的问题
@@ -44,15 +47,20 @@ categories:
 ```
 jmap -dump:format=b,file=文件名 [pid]
 ```
-![image003.png](https://upload-images.jianshu.io/upload_images/2043910-b66a00048f6cf229.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片1.png](https://img.wangwen135.top:23456/image/2024/08/66ba2dc9af4f4.png)
+
 而连接池中并没连接
-![image005.png](https://upload-images.jianshu.io/upload_images/2043910-2832090a35afe624.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片2.png](https://img.wangwen135.top:23456/image/2024/08/66ba2e2f65550.png)
+
 OQL
 ```
 select x.deque from io.netty.channel.pool.FixedChannelPool x
 ```
+
+
 ### 总结问题：
-FixedChannelPool类的 acquiredChannelCount字段
+`FixedChannelPool` 类的 `acquiredChannelCount` 字段
 一直增加到了最大的限制（100）导致的
 获取到的连接一直没有释放
 
@@ -61,35 +69,46 @@ FixedChannelPool类的 acquiredChannelCount字段
 
 导出测试程序的dump文件和线上的进行比较
 对比了一下测试版本和线上版本的dump文件，发现类不一致
-![image007.png](https://upload-images.jianshu.io/upload_images/2043910-8ccd1dadc6085bb6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片3.png](https://img.wangwen135.top:23456/image/2024/08/66ba2ea3cc665.png)
 
 线上版本没有这个变量
-![image009.png](https://upload-images.jianshu.io/upload_images/2043910-bfb449c1b8292e07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片4.png](https://img.wangwen135.top:23456/image/2024/08/66ba2ec28d5b5.png)
 
 检查发现 调试版本 和 线上的版本 不一致
-调试版本：**netty-all-4.0.34.Final.jar**
-线上版本：**netty-all-4.0.30.Final.jar**
+
+- 调试版本：**netty-all-4.0.34.Final.jar**
+ 
+- 线上版本：**netty-all-4.0.30.Final.jar**
+
 
 再次查看netty-all-4.0.30的代码，发现netty的连接池存在问题
 
 ## 问题重现
+
 检查代码发现连接归还到连接池中再次获取时存在问题
 当连接用完之后，归还到连接池中，过了一段时间之后连接变成了 TIME_WAIT 状态（或断开），再去获取连接（此时将获取到一个异常的连接）
-![image011.png](https://upload-images.jianshu.io/upload_images/2043910-5a07e96289d29b1e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片5.png](https://img.wangwen135.top:23456/image/2024/08/66ba2f20ad8fc.png)
 
 获取到连接之后会对连接的有效性进行检查
-![image013.png](https://upload-images.jianshu.io/upload_images/2043910-8e24e351fbdd2d78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片6.png](https://img.wangwen135.top:23456/image/2024/08/66ba2f3c04e77.png)
+
 
 检查到连接异常之后会关掉这个连接并再次获取连接
-![image015.png](https://upload-images.jianshu.io/upload_images/2043910-d5e889d54cc5cab3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-此时会再调用FixedChannelPool类的acquire0方法获取连接，这将导致acquiredChannelCount 变量再次 +1，这次获取连接将会+2，而在释放时只会-1，这将导致这个值一直增大，直到达到maxConnections 的限制，之后就再也获取不到连接了
+![图片7.png](https://img.wangwen135.top:23456/image/2024/08/66ba2f6623b14.png)
 
-![image017.png](https://upload-images.jianshu.io/upload_images/2043910-22e888669614e615.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+此时会再调用**FixedChannelPool**类的`acquire0`方法获取连接，这将导致**acquiredChannelCount** 变量再次 +1，这次获取连接将会+2，而在释放时只会-1，这将导致这个值一直增大，直到达到maxConnections 的限制，之后就再也获取不到连接了
+
+![图片8.png](https://img.wangwen135.top:23456/image/2024/08/66ba2fbd6e512.png)
 
 释放连接时只会-1
 
-![image019.png](https://upload-images.jianshu.io/upload_images/2043910-cd4833887fbb8e6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片9.png](https://img.wangwen135.top:23456/image/2024/08/66ba2fdaa5906.png)
+
 
 ## 修复方案
 升级netty的包到更高的版本

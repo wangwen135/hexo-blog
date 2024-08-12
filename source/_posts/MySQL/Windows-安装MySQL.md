@@ -1,15 +1,13 @@
 ---
 title: Windows-安装MySQL
-date: 2021-12-09 23:41
+date: 2017-11-09 23:41
 tags: 
   - MySQL
 categories:
   - [MySQL]
 ---
 
-*2017年11月*
 
----
 
 > 确保以具有管理员权限的用户身份登录。
 

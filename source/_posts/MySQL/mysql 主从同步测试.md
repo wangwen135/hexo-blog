@@ -1,15 +1,13 @@
 ---
-title: mysql-主从同步测试
-date: 2023-09-10 23:41
+title: mysql 主从同步测试
+date: 2018-10-10 23:41
 tags: 
   - MySQL
+  - binlog
 categories:
   - [MySQL]
 ---
 
-*2018年的吧*
-
----
 
 测试环境
 - 系统：WIN 10

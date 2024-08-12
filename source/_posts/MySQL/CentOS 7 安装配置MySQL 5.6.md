@@ -1,15 +1,13 @@
 ---
-title: CentOS-7-安装配置MySQL-5-6
-date: 2019-08-07 23:41
+title: CentOS 7 安装配置MySQL 5.6
+date: 2017-11-07
 tags: 
   - MySQL
 categories:
   - [MySQL]
 ---
 
-*2017年11月*
 
----
 
 CentOS7的yum源中默认好像是没有mysql的。为了解决这个问题，我们要先下载mysql的repo源。
 

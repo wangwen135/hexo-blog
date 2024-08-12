@@ -1,6 +1,6 @@
 ---
-title: CentOS7-安装-Nginx
-date: 2023-09-21 23:41
+title: CentOS7 安装 Nginx
+date: 2017-05-10 23:41
 tags: 
   - Nginx
 categories:

@@ -1,13 +1,12 @@
 ---
 title: 查看binlog日志
-date: 2022-11-07 23:41
+date: 2018-09-25 23:41
 tags: 
   - MySQL
+  - binlog
 categories:
   - [MySQL]
 ---
-
- > *2018年9月*
 
 ### mysqlbinlog
 使用mysqlbinlog 命令查看

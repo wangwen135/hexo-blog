@@ -1,15 +1,13 @@
 ---
-title: CentOS7-安装-MySQL5-7-记录
-date: 2022-02-12 23:41
+title: CentOS 7 安装MySQL 5.7 记录
+date: 2017-11-07
 tags: 
   - MySQL
 categories:
   - [MySQL]
 ---
 
-*2017年11月*
 
----
 
 ### 系统版本
 CentOS Linux 7 (Core)
