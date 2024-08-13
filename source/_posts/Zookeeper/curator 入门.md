@@ -1,8 +1,9 @@
 ---
-title: curator-入门
-date: 2021-08-20 23:41
+title: curator 入门
+date: 2018-06-13 23:41
 tags: 
   - Zookeeper
+  - Curator
 categories:
   - [Zookeeper]
 ---

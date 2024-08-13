@@ -1,13 +1,12 @@
 ---
-title: Selenium-与-ChromeDriver
-date: 2020-02-15 23:41
+title: Selenium 与 ChromeDriver
+date: 2018-03-20 23:41
 tags: 
   - Selenium
 categories:
   - [Selenium]
 ---
 
-*王某某瞎编于 2018年3月20日*
 
 ## Selenium 
 

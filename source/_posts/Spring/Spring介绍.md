@@ -1,15 +1,14 @@
 ---
-title: Spring-介绍
-date: 2020-07-22 23:41
+title: Spring介绍
+date: 2018-06-04 23:41
 tags: 
   - Spring
 categories:
   - [Spring]
 ---
 
-*从这个地方随手翻译过来的*
+*从这个地方随手翻译过来的*  
 *https://www.tutorialspoint.com/spring/index.htm*  
-*王某某*
 
 ## 概述
 Spring是企业Java最流行的应用程序开发框架。全球数以百万计的开发人员使用Spring Framework创建高性能，易于测试和可重用的代码。

@@ -1,6 +1,6 @@
 ---
 title: Redis安装
-date: 2021-02-19 23:41
+date: 2018-06-19 23:41
 tags: 
   - Redis
 categories:

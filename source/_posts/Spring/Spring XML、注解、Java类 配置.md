@@ -1,13 +1,13 @@
 ---
-title: Spring-XML、注解、Java类-配置
-date: 2021-07-21 23:41
+title: Spring XML、注解、Java类 配置
+date: 2018-06-04 23:41
 tags: 
   - Spring
 categories:
   - [Spring]
 ---
 
-配置Spring一般包括3中方式
+配置Spring一般包括3种方式
 - 基于XML的配置文件
 - 基于注解的配置
 - 基于Java的配置

@@ -1,13 +1,12 @@
 ---
-title: Gecko-geckodriver-Selenium
-date: 2021-10-12 23:41
+title: Gecko geckodriver Selenium
+date: 2018-03-24 23:41
 tags: 
   - Selenium
 categories:
   - [Selenium]
 ---
 
-*wwh 2018年3月24日*
 
 ## Gecko
 

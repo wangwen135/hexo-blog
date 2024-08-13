@@ -1,6 +1,6 @@
 ---
 title: JAX-RS
-date: 2022-04-22 23:41
+date: 2016-10-19 19:05
 tags: 
   - RESTful
 categories:

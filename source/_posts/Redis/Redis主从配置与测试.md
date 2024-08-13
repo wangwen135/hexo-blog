@@ -1,6 +1,6 @@
 ---
 title: Redis主从配置与测试
-date: 2021-10-25 23:41
+date: 2019-02-19 23:41
 tags: 
   - Redis
 categories:

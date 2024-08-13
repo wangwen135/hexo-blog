@@ -1,8 +1,9 @@
 ---
-title: Curator-基本API-操作
-date: 2022-08-01 23:41
+title: Curator 基本API 操作
+date: 2017-09-04 23:41
 tags: 
   - Zookeeper
+  - Curator
 categories:
   - [Zookeeper]
 ---

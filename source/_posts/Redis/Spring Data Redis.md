@@ -1,8 +1,9 @@
 ---
-title: Spring-Data-Redis
-date: 2019-11-11 23:41
+title: Spring Data Redis
+date: 2018-05-31 23:41
 tags: 
   - Redis
+  - Spring Data
 categories:
   - [Redis]
 ---

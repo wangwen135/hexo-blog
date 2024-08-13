@@ -1,6 +1,6 @@
 ---
 title: Redis集群配置与测试
-date: 2024-07-22 23:41
+date: 2018-06-04 23:41
 tags: 
   - Redis
 categories:

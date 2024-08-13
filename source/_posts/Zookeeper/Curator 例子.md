@@ -1,8 +1,9 @@
 ---
-title: Curator-例子
-date: 2022-10-06 23:41
+title: Curator 例子
+date: 2018-06-13 23:41
 tags: 
   - Zookeeper
+  - Curator
 categories:
   - [Zookeeper]
 ---
